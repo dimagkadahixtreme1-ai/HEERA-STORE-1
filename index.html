@@ -56,33 +56,34 @@
         .hero h1 {
             font-size: clamp(2.5rem, 8vw, 4.5rem);
             color: var(--white);
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 10px;
+        }
+
+        /* Slogan and Theme styling with lines */
+        .hero .slogan {
+            font-size: clamp(1rem, 3vw, 1.8rem);
+            margin-bottom: 10px;
             border-bottom: 2px solid var(--gold);
             padding-bottom: 5px;
-        }
-
-        .theme-name {
-            font-size: 1.2rem;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 20px;
-            font-weight: 300;
-        }
-
-        .slogan-hindi {
-            font-family: var(--body-font);
-            font-size: 1.5rem;
-            margin-top: 10px;
             font-weight: 400;
-            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        .hero .theme {
+            font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 5px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
         }
 
         .hero p {
-            font-size: 1rem;
+            font-size: clamp(1rem, 4vw, 1.5rem);
             letter-spacing: 2px;
             text-transform: uppercase;
-            opacity: 0.9;
         }
 
         /* --- ABOUT SECTION --- */
@@ -230,9 +231,6 @@
             section {
                 padding: 60px 5%;
             }
-            .slogan-hindi {
-                font-size: 1.1rem;
-            }
         }
     </style>
 </head>
@@ -240,10 +238,10 @@
 
     <header class="hero">
         <h1>Heera Store</h1>
-        <div class="theme-name">The House Of Readymade</div>
+        <div class="slogan">समय बीतता गया।<br>विश्वास बढ़ता गया।।</div>
+        <div class="theme">The House Of Readymade</div>
         <p>Premium Wholesale Fashion in Bhopal</p>
-        <div class="slogan-hindi">समय बीतता गया|
-            विश्वास बढ़ता गया||</div>
+        <span style="margin-top: 20px; font-style: italic; color: var(--gold);">Quality Ethnic Wear for Every Occasion</span>
     </header>
 
     <section class="about">
